@@ -1,0 +1,14 @@
+# 环境与密钥
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 实验产物（可选忽略；如需版本化结果可删除 results 行）
+results/
+figures/
+
+# IDE
+.idea/

@@ -1,0 +1,15 @@
+[project]
+name = "test-cases-generation-by-llm"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.30",
+    "python-dotenv>=1.0",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+]
+
+[project.optional-dependencies]
+# 需要加载真实 HumanEval/MBPP 时再装（会拉取较重依赖）
+data = ["datasets>=3.0", "evalplus>=0.3"]
+stats = ["scipy>=1.13", "pandas>=2.2", "matplotlib>=3.8"]
